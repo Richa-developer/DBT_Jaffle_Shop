@@ -1,0 +1,11 @@
+version: 2
+models:
+- name: CALCULATION_BATCH
+  tests:
+    - dbt_utils.equal_rowcount:
+         compare_model: ref('CURATION_INVENTBATCH')
+  columns:
+  - name: PARTITION
+    tests:
+    - not_null
+  - name: RECID

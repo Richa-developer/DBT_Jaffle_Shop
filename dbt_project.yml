@@ -9,6 +9,7 @@ data-paths: ["data"]
 macro-paths: ["macros"]
 
 target-path: "target"
+log-path: dbt_logs
 clean-targets:
     - "target"
     - "dbt_modules"
@@ -17,6 +18,3 @@ clean-targets:
 models:
   jaffle_shop:
       materialized: table
-      staging:
-        materialized: view
-        tags: ["staging", "hourly"]
