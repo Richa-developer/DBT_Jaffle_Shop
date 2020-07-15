@@ -28548,3 +28548,1275 @@ dbt.exceptions.DatabaseException: Database Error in test dbt_utils_equal_rowcoun
 Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
 2020-07-15 12:28:47.120227 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0052240730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00522e8e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0052322820>]}
 2020-07-15 12:28:47.121111 (MainThread): Flushing usage events
+2020-07-15 12:45:15.690916 (MainThread): Running with dbt=0.17.0
+2020-07-15 12:45:16.208586 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/richa_15/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 12:45:16.208955 (MainThread): Tracking: tracking
+2020-07-15 12:45:16.209095 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81670e0640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163f16a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163f16b20>]}
+2020-07-15 12:45:16.222227 (MainThread): Partial parsing not enabled
+2020-07-15 12:45:16.224356 (MainThread): Parsing macros/core.sql
+2020-07-15 12:45:16.228040 (MainThread): Parsing macros/adapters/common.sql
+2020-07-15 12:45:16.264257 (MainThread): Parsing macros/etc/datetime.sql
+2020-07-15 12:45:16.271203 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-07-15 12:45:16.272069 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-07-15 12:45:16.273402 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-07-15 12:45:16.274959 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-07-15 12:45:16.276239 (MainThread): Parsing macros/etc/query.sql
+2020-07-15 12:45:16.277152 (MainThread): Parsing macros/materializations/helpers.sql
+2020-07-15 12:45:16.282823 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-07-15 12:45:16.293003 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-07-15 12:45:16.294471 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-07-15 12:45:16.299088 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-07-15 12:45:16.314000 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-07-15 12:45:16.335149 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-07-15 12:45:16.336602 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-07-15 12:45:16.348274 (MainThread): Parsing macros/materializations/table/table.sql
+2020-07-15 12:45:16.353062 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-07-15 12:45:16.356611 (MainThread): Parsing macros/materializations/view/view.sql
+2020-07-15 12:45:16.361077 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-07-15 12:45:16.362626 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-07-15 12:45:16.363427 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-07-15 12:45:16.364374 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-07-15 12:45:16.365698 (MainThread): Parsing macros/adapters.sql
+2020-07-15 12:45:16.381273 (MainThread): Parsing macros/catalog.sql
+2020-07-15 12:45:16.382944 (MainThread): Parsing macros/materializations/incremental.sql
+2020-07-15 12:45:16.389473 (MainThread): Parsing macros/materializations/merge.sql
+2020-07-15 12:45:16.391072 (MainThread): Parsing macros/materializations/table.sql
+2020-07-15 12:45:16.393756 (MainThread): Parsing macros/materializations/view.sql
+2020-07-15 12:45:16.414983 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - jaffle_shop
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+2020-07-15 12:45:16.419788 (MainThread): Partial parsing not enabled
+2020-07-15 12:45:16.421952 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2020-07-15 12:45:16.424020 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2020-07-15 12:45:16.426601 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2020-07-15 12:45:16.430976 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2020-07-15 12:45:16.433667 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2020-07-15 12:45:16.441247 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2020-07-15 12:45:16.442652 (MainThread): Parsing macros/cross_db_utils/except.sql
+2020-07-15 12:45:16.443622 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2020-07-15 12:45:16.444821 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2020-07-15 12:45:16.446032 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2020-07-15 12:45:16.446989 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2020-07-15 12:45:16.449914 (MainThread): Parsing macros/cross_db_utils/length.sql
+2020-07-15 12:45:16.451488 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2020-07-15 12:45:16.452401 (MainThread): Parsing macros/cross_db_utils/position.sql
+2020-07-15 12:45:16.453767 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2020-07-15 12:45:16.454878 (MainThread): Parsing macros/cross_db_utils/right.sql
+2020-07-15 12:45:16.456881 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2020-07-15 12:45:16.458541 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2020-07-15 12:45:16.460376 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2020-07-15 12:45:16.464908 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2020-07-15 12:45:16.466682 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2020-07-15 12:45:16.468260 (MainThread): Parsing macros/datetime/date_spine.sql
+2020-07-15 12:45:16.471179 (MainThread): Parsing macros/geo/haversine_distance.sql
+2020-07-15 12:45:16.472186 (MainThread): Parsing macros/logger/log_info.sql
+2020-07-15 12:45:16.472880 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2020-07-15 12:45:16.473533 (MainThread): Parsing macros/logger/pretty_time.sql
+2020-07-15 12:45:16.474247 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2020-07-15 12:45:16.491138 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2020-07-15 12:45:16.492038 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2020-07-15 12:45:16.493243 (MainThread): Parsing macros/schema_tests/equality.sql
+2020-07-15 12:45:16.496048 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2020-07-15 12:45:16.497127 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2020-07-15 12:45:16.498060 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2020-07-15 12:45:16.502108 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2020-07-15 12:45:16.502964 (MainThread): Parsing macros/schema_tests/recency.sql
+2020-07-15 12:45:16.504006 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2020-07-15 12:45:16.505576 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2020-07-15 12:45:16.506716 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2020-07-15 12:45:16.508011 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2020-07-15 12:45:16.509010 (MainThread): Parsing macros/sql/generate_series.sql
+2020-07-15 12:45:16.511577 (MainThread): Parsing macros/sql/get_column_values.sql
+2020-07-15 12:45:16.514569 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2020-07-15 12:45:16.516256 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2020-07-15 12:45:16.518211 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2020-07-15 12:45:16.520907 (MainThread): Parsing macros/sql/get_tables_by_pattern.sql
+2020-07-15 12:45:16.521719 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2020-07-15 12:45:16.523705 (MainThread): Parsing macros/sql/groupby.sql
+2020-07-15 12:45:16.524511 (MainThread): Parsing macros/sql/nullcheck.sql
+2020-07-15 12:45:16.525554 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2020-07-15 12:45:16.526569 (MainThread): Parsing macros/sql/pivot.sql
+2020-07-15 12:45:16.528640 (MainThread): Parsing macros/sql/safe_add.sql
+2020-07-15 12:45:16.529543 (MainThread): Parsing macros/sql/star.sql
+2020-07-15 12:45:16.531708 (MainThread): Parsing macros/sql/surrogate_key.sql
+2020-07-15 12:45:16.533921 (MainThread): Parsing macros/sql/union.sql
+2020-07-15 12:45:16.540502 (MainThread): Parsing macros/sql/unpivot.sql
+2020-07-15 12:45:16.544852 (MainThread): Parsing macros/web/get_url_host.sql
+2020-07-15 12:45:16.545954 (MainThread): Parsing macros/web/get_url_parameter.sql
+2020-07-15 12:45:16.546905 (MainThread): Parsing macros/web/get_url_path.sql
+2020-07-15 12:45:16.577022 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.CALCULATION_BATCH".
+2020-07-15 12:45:16.577131 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.594947 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:45:16.595105 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.599452 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:45:16.599541 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.604669 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:45:16.604774 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.610653 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:45:16.610744 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.616671 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:45:16.616772 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.623066 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:45:16.623166 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.866893 (MainThread): Found 7 models, 3 tests, 0 snapshots, 0 analyses, 268 macros, 0 operations, 3 seed files, 0 sources
+2020-07-15 12:45:16.868173 (MainThread): 
+2020-07-15 12:45:16.868521 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 12:45:16.868607 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:16.876153 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.876258 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 12:45:16.876675 (ThreadPoolExecutor-0_1): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.885792 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.886427 (ThreadPoolExecutor-0_2): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.886811 (ThreadPoolExecutor-0_1): Opening a new connection, currently in state init
+2020-07-15 12:45:16.887059 (ThreadPoolExecutor-0_3): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.887208 (ThreadPoolExecutor-0_0): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:45:16.887424 (ThreadPoolExecutor-0_2): Opening a new connection, currently in state init
+2020-07-15 12:45:16.889052 (ThreadPoolExecutor-0_1): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.889560 (ThreadPoolExecutor-0_3): Opening a new connection, currently in state init
+2020-07-15 12:45:16.892045 (ThreadPoolExecutor-0_2): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.893204 (ThreadPoolExecutor-0_1): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:45:16.894721 (ThreadPoolExecutor-0_3): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:45:16.894888 (ThreadPoolExecutor-0_2): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:45:16.896528 (ThreadPoolExecutor-0_3): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:45:18.694660 (ThreadPoolExecutor-0_3): unclosed file <_io.BufferedReader name='/home/richa_15/.local/lib/python3.8/site-packages/certifi/cacert.pem'>
+2020-07-15 12:45:19.842880 (ThreadPoolExecutor-0_3): SQL status: SUCCESS 17 in 2.94 seconds
+2020-07-15 12:45:24.036937 (ThreadPoolExecutor-0_2): SQL status: SUCCESS 17 in 7.14 seconds
+2020-07-15 12:45:24.049227 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 17 in 7.16 seconds
+2020-07-15 12:45:24.556786 (ThreadPoolExecutor-0_1): SQL status: SUCCESS 17 in 7.66 seconds
+2020-07-15 12:45:24.592704 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING".
+2020-07-15 12:45:24.593452 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:45:24.594000 (ThreadPoolExecutor-1_1): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM".
+2020-07-15 12:45:24.594713 (ThreadPoolExecutor-1_2): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CALCULATION_INVENTORY".
+2020-07-15 12:45:24.595404 (ThreadPoolExecutor-1_3): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY".
+2020-07-15 12:45:24.609344 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING".
+2020-07-15 12:45:24.609671 (ThreadPoolExecutor-1_1): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:45:24.609939 (ThreadPoolExecutor-1_2): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:45:24.610189 (ThreadPoolExecutor-1_3): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:45:24.610442 (ThreadPoolExecutor-1_0): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING
+2020-07-15 12:45:24.613391 (ThreadPoolExecutor-1_1): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM".
+2020-07-15 12:45:24.616504 (ThreadPoolExecutor-1_2): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CALCULATION_INVENTORY".
+2020-07-15 12:45:24.619554 (ThreadPoolExecutor-1_3): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY".
+2020-07-15 12:45:24.621876 (ThreadPoolExecutor-1_1): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_DIM
+2020-07-15 12:45:24.622746 (ThreadPoolExecutor-1_2): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CALCULATION_INVENTORY: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CALCULATION_INVENTORY"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CALCULATION_INVENTORY
+2020-07-15 12:45:24.623180 (ThreadPoolExecutor-1_3): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY
+2020-07-15 12:45:25.078723 (ThreadPoolExecutor-1_1): SQL status: SUCCESS 0 in 0.46 seconds
+2020-07-15 12:45:25.080090 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 3 in 0.46 seconds
+2020-07-15 12:45:25.081298 (ThreadPoolExecutor-1_2): SQL status: SUCCESS 1 in 0.45 seconds
+2020-07-15 12:45:25.083464 (ThreadPoolExecutor-1_1): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST".
+2020-07-15 12:45:25.101737 (ThreadPoolExecutor-1_3): SQL status: SUCCESS 2 in 0.47 seconds
+2020-07-15 12:45:25.105771 (ThreadPoolExecutor-1_1): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM).
+2020-07-15 12:45:25.120697 (ThreadPoolExecutor-1_1): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST".
+2020-07-15 12:45:25.121105 (ThreadPoolExecutor-1_1): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST
+2020-07-15 12:45:25.583745 (ThreadPoolExecutor-1_1): SQL status: SUCCESS 3 in 0.46 seconds
+2020-07-15 12:45:25.592214 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 12:45:25.592465 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:45:25.592829 (MainThread): Using snowflake connection "master".
+2020-07-15 12:45:25.593021 (MainThread): On master: BEGIN
+2020-07-15 12:45:27.108333 (MainThread): SQL status: SUCCESS 1 in 1.52 seconds
+2020-07-15 12:45:27.108889 (MainThread): On master: COMMIT
+2020-07-15 12:45:27.109338 (MainThread): Using snowflake connection "master".
+2020-07-15 12:45:27.109655 (MainThread): On master: COMMIT
+2020-07-15 12:45:27.724128 (MainThread): SQL status: SUCCESS 1 in 0.61 seconds
+2020-07-15 12:45:27.725349 (MainThread): 13:45:27 | Concurrency: 4 threads (target='dev')
+2020-07-15 12:45:27.726553 (MainThread): 13:45:27 | 
+2020-07-15 12:45:27.739171 (Thread-1): Began running node model.jaffle_shop.CURATION_INVENTBATCH
+2020-07-15 12:45:27.739622 (Thread-2): Began running node model.jaffle_shop.CURATION_PDS
+2020-07-15 12:45:27.740002 (Thread-3): Began running node model.jaffle_shop.customer_payments
+2020-07-15 12:45:27.740278 (Thread-4): Began running node model.jaffle_shop.stg_customer
+2020-07-15 12:45:27.742768 (Thread-1): 13:45:27 | 1 of 7 START table model TEST_CURATION_AX_INVENTORY.INVENTBATCH...... [RUN]
+2020-07-15 12:45:27.745008 (Thread-2): 13:45:27 | 2 of 7 START table model TEST_CURATION_AX_INVENTORY.PDSDISPOSITIONMASTER [RUN]
+2020-07-15 12:45:27.747999 (Thread-3): 13:45:27 | 3 of 7 START table model TEST_DIM.CUSTOMER_PAYMENTS.................. [RUN]
+2020-07-15 12:45:27.750204 (Thread-4): 13:45:27 | 4 of 7 START table model TEST_STAGING.STG_CUSTOMERS.................. [RUN]
+2020-07-15 12:45:27.751476 (Thread-1): Acquiring new snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:45:27.752034 (Thread-1): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST).
+2020-07-15 12:45:27.752353 (Thread-1): Compiling model.jaffle_shop.CURATION_INVENTBATCH
+2020-07-15 12:45:27.775962 (Thread-2): Acquiring new snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:45:27.786155 (Thread-1): Writing injected SQL for node "model.jaffle_shop.CURATION_INVENTBATCH"
+2020-07-15 12:45:27.786755 (Thread-2): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY).
+2020-07-15 12:45:27.787437 (Thread-3): Acquiring new snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:45:27.788244 (Thread-2): Compiling model.jaffle_shop.CURATION_PDS
+2020-07-15 12:45:27.788573 (Thread-3): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CALCULATION_INVENTORY).
+2020-07-15 12:45:27.799686 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:45:27.803046 (Thread-2): Writing injected SQL for node "model.jaffle_shop.CURATION_PDS"
+2020-07-15 12:45:27.803503 (Thread-1): finished collecting timing info
+2020-07-15 12:45:27.804167 (Thread-3): Compiling model.jaffle_shop.customer_payments
+2020-07-15 12:45:27.804520 (Thread-4): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING).
+2020-07-15 12:45:27.861231 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.CURATION_INVENTBATCH"
+2020-07-15 12:45:27.861549 (Thread-2): finished collecting timing info
+2020-07-15 12:45:27.879583 (Thread-3): Writing injected SQL for node "model.jaffle_shop.customer_payments"
+2020-07-15 12:45:27.880096 (Thread-4): Compiling model.jaffle_shop.stg_customer
+2020-07-15 12:45:27.888250 (Thread-2): Writing runtime SQL for node "model.jaffle_shop.CURATION_PDS"
+2020-07-15 12:45:27.889742 (Thread-1): Using snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:45:27.899282 (Thread-4): Writing injected SQL for node "model.jaffle_shop.stg_customer"
+2020-07-15 12:45:27.899665 (Thread-3): finished collecting timing info
+2020-07-15 12:45:27.899892 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: BEGIN
+2020-07-15 12:45:27.900581 (Thread-2): Using snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:45:27.907699 (Thread-3): Writing runtime SQL for node "model.jaffle_shop.customer_payments"
+2020-07-15 12:45:27.908911 (Thread-4): finished collecting timing info
+2020-07-15 12:45:27.910645 (Thread-2): On model.jaffle_shop.CURATION_PDS: BEGIN
+2020-07-15 12:45:27.924970 (Thread-4): Writing runtime SQL for node "model.jaffle_shop.stg_customer"
+2020-07-15 12:45:27.926597 (Thread-3): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:45:27.929623 (Thread-3): On model.jaffle_shop.customer_payments: BEGIN
+2020-07-15 12:45:27.930868 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:45:27.933205 (Thread-4): On model.jaffle_shop.stg_customer: BEGIN
+2020-07-15 12:45:28.338785 (Thread-2): SQL status: SUCCESS 1 in 0.41 seconds
+2020-07-15 12:45:28.339362 (Thread-2): Using snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:45:28.339904 (Thread-2): On model.jaffle_shop.CURATION_PDS: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.CURATION_PDS"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY.PDSDISPOSITIONMASTER  as
+      (
+
+SELECT
+  "DATAAREAID",
+  "DESCRIPTION",
+  "DISPOSITIONCODE",
+  "IBRALLOWPRODUCTION",
+  "INVENTLOCATIONID",
+  "PARTITION",
+  "PDSNETTABLE",
+  "PDSPRODBLOCKPICK",
+  "PDSPRODBLOCKPRODUCTIONPICKINGJOURNAL",
+  "PDSPRODBLOCKRESERVE",
+  "PDSSALESBLOCKPICK",
+  "PDSSALESBLOCKRESERVE",
+  "PDSSALESBLOCKSHIP",
+  "PDSTRANSBLOCKPICK",
+  "PDSTRANSBLOCKRESERVE",
+  "PDSTRANSBLOCKSHIP",
+  "RECID",
+  "RECVERSION",
+  "STATUS",
+  "_SDC_BATCHED_AT",
+  "_SDC_DELETED_AT",
+  "_SDC_EXTRACTED_AT"
+FROM "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."INGESTION_AX"."PDSDISPOSITIONMASTER"
+      );
+2020-07-15 12:45:28.467173 (Thread-3): SQL status: SUCCESS 1 in 0.54 seconds
+2020-07-15 12:45:28.467873 (Thread-3): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:45:28.468374 (Thread-3): On model.jaffle_shop.customer_payments: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customer_payments"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_DIM.CUSTOMER_PAYMENTS  as
+      (
+
+select
+        customers.id
+from "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."TEST".raw_customers customers
+left join "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."TEST".raw_orders customer_orders using (id)
+      );
+2020-07-15 12:45:28.568555 (Thread-1): SQL status: SUCCESS 1 in 0.66 seconds
+2020-07-15 12:45:28.569651 (Thread-1): Using snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:45:28.570111 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.CURATION_INVENTBATCH"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY.INVENTBATCH  as
+      (
+
+SELECT
+  "DATAAREAID",
+  "DESCRIPTION",
+  "EXPDATE",
+  "IBRVENDACCOUNT",
+  "INVENTBATCHID",
+  "ITEMID",
+  "PARTITION",
+  "PDSBESTBEFOREDATE",
+  "PDSCOUNTRYOFORIGIN1",
+  "PDSCOUNTRYOFORIGIN2",
+  "PDSDISPOSITIONCODE",
+  "PDSFINISHEDGOODSDATETESTED",
+  "PDSINHERITBATCHATTRIB",
+  "PDSINHERITEDSHELFLIFE",
+  "PDSSAMELOT",
+  "PDSSHELFADVICEDATE",
+  "PDSUSEVENDBATCHDATE",
+  "PDSUSEVENDBATCHEXP",
+  "PDSVENDBATCHDATE",
+  "PDSVENDBATCHID",
+  "PDSVENDEXPIRYDATE",
+  "PRODDATE",
+  "RECID",
+  "RECVERSION",
+  "_SDC_BATCHED_AT",
+  "_SDC_DELETED_AT",
+  "_SDC_EXTRACTED_AT"
+FROM "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."INGESTION_AX"."INVENTBATCH"
+      );
+2020-07-15 12:45:29.156716 (Thread-4): SQL status: SUCCESS 1 in 1.22 seconds
+2020-07-15 12:45:29.157469 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:45:29.157925 (Thread-4): On model.jaffle_shop.stg_customer: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customer"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_CUSTOMERS  as
+      (
+
+select
+        id as customer_id,
+        first_name,
+	last_name,
+        email
+from  DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_customers
+      );
+2020-07-15 12:45:32.458504 (Thread-2): SQL status: SUCCESS 1 in 4.12 seconds
+2020-07-15 12:45:32.458836 (Thread-1): SQL status: SUCCESS 1 in 3.89 seconds
+2020-07-15 12:45:32.459697 (Thread-2): On model.jaffle_shop.CURATION_PDS: COMMIT
+2020-07-15 12:45:32.460292 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: COMMIT
+2020-07-15 12:45:32.460431 (Thread-2): Using snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:45:32.460558 (Thread-1): Using snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:45:32.460659 (Thread-2): On model.jaffle_shop.CURATION_PDS: COMMIT
+2020-07-15 12:45:32.460762 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: COMMIT
+2020-07-15 12:45:32.490809 (Thread-3): SQL status: SUCCESS 1 in 4.02 seconds
+2020-07-15 12:45:32.491665 (Thread-3): On model.jaffle_shop.customer_payments: COMMIT
+2020-07-15 12:45:32.491790 (Thread-3): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:45:32.491864 (Thread-3): On model.jaffle_shop.customer_payments: COMMIT
+2020-07-15 12:45:32.624316 (Thread-4): SQL status: SUCCESS 1 in 3.47 seconds
+2020-07-15 12:45:32.626698 (Thread-4): On model.jaffle_shop.stg_customer: COMMIT
+2020-07-15 12:45:32.627101 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:45:32.627367 (Thread-4): On model.jaffle_shop.stg_customer: COMMIT
+2020-07-15 12:45:32.697586 (Thread-2): SQL status: SUCCESS 1 in 0.24 seconds
+2020-07-15 12:45:32.705177 (Thread-2): finished collecting timing info
+2020-07-15 12:45:32.705784 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9bb0793a-cda8-4f08-aefe-9258205300c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163ac02e0>]}
+2020-07-15 12:45:32.706749 (Thread-2): 13:45:32 | 2 of 7 OK created table model TEST_CURATION_AX_INVENTORY.PDSDISPOSITIONMASTER [SUCCESS 1 in 4.93s]
+2020-07-15 12:45:32.707284 (Thread-2): Finished running node model.jaffle_shop.CURATION_PDS
+2020-07-15 12:45:32.707491 (Thread-2): Began running node model.jaffle_shop.stg_orders
+2020-07-15 12:45:32.708376 (Thread-2): 13:45:32 | 5 of 7 START table model TEST_STAGING.STG_ORDERS..................... [RUN]
+2020-07-15 12:45:32.708901 (Thread-2): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:45:32.709008 (Thread-2): Re-using an available connection from the pool (formerly model.jaffle_shop.CURATION_PDS).
+2020-07-15 12:45:32.709099 (Thread-2): Compiling model.jaffle_shop.stg_orders
+2020-07-15 12:45:32.715563 (Thread-2): Writing injected SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 12:45:32.716074 (Thread-2): finished collecting timing info
+2020-07-15 12:45:32.719955 (Thread-2): Writing runtime SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 12:45:32.720611 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:45:32.720703 (Thread-2): On model.jaffle_shop.stg_orders: BEGIN
+2020-07-15 12:45:32.739724 (Thread-1): SQL status: SUCCESS 1 in 0.28 seconds
+2020-07-15 12:45:32.743446 (Thread-1): finished collecting timing info
+2020-07-15 12:45:32.744712 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9bb0793a-cda8-4f08-aefe-9258205300c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163bbba60>]}
+2020-07-15 12:45:32.748143 (Thread-1): 13:45:32 | 1 of 7 OK created table model TEST_CURATION_AX_INVENTORY.INVENTBATCH. [SUCCESS 1 in 4.99s]
+2020-07-15 12:45:32.750402 (Thread-3): SQL status: SUCCESS 1 in 0.26 seconds
+2020-07-15 12:45:32.756031 (Thread-3): finished collecting timing info
+2020-07-15 12:45:32.756700 (Thread-1): Finished running node model.jaffle_shop.CURATION_INVENTBATCH
+2020-07-15 12:45:32.758091 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9bb0793a-cda8-4f08-aefe-9258205300c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163ac0040>]}
+2020-07-15 12:45:32.758566 (Thread-1): Began running node model.jaffle_shop.stg_payments
+2020-07-15 12:45:32.760968 (Thread-3): 13:45:32 | 3 of 7 OK created table model TEST_DIM.CUSTOMER_PAYMENTS............. [SUCCESS 1 in 4.97s]
+2020-07-15 12:45:32.762815 (Thread-1): 13:45:32 | 6 of 7 START table model TEST_STAGING.STG_PAYMENTS................... [RUN]
+2020-07-15 12:45:32.765583 (Thread-3): Finished running node model.jaffle_shop.customer_payments
+2020-07-15 12:45:32.766001 (Thread-3): Began running node model.jaffle_shop.CALCULATION_BATCH
+2020-07-15 12:45:32.768313 (Thread-3): 13:45:32 | 7 of 7 START table model TEST_CALCULATION_INVENTORY.BATCH............ [RUN]
+2020-07-15 12:45:32.768890 (Thread-1): Acquiring new snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:45:32.769316 (Thread-1): Re-using an available connection from the pool (formerly model.jaffle_shop.CURATION_INVENTBATCH).
+2020-07-15 12:45:32.769548 (Thread-1): Compiling model.jaffle_shop.stg_payments
+2020-07-15 12:45:32.784025 (Thread-1): Writing injected SQL for node "model.jaffle_shop.stg_payments"
+2020-07-15 12:45:32.784610 (Thread-3): Acquiring new snowflake connection "model.jaffle_shop.CALCULATION_BATCH".
+2020-07-15 12:45:32.785123 (Thread-3): Re-using an available connection from the pool (formerly model.jaffle_shop.customer_payments).
+2020-07-15 12:45:32.785433 (Thread-3): Compiling model.jaffle_shop.CALCULATION_BATCH
+2020-07-15 12:45:32.808369 (Thread-1): finished collecting timing info
+2020-07-15 12:45:32.810654 (Thread-3): Writing injected SQL for node "model.jaffle_shop.CALCULATION_BATCH"
+2020-07-15 12:45:32.818671 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.stg_payments"
+2020-07-15 12:45:32.819977 (Thread-3): finished collecting timing info
+2020-07-15 12:45:32.821184 (Thread-1): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:45:32.829056 (Thread-3): Writing runtime SQL for node "model.jaffle_shop.CALCULATION_BATCH"
+2020-07-15 12:45:32.829412 (Thread-1): On model.jaffle_shop.stg_payments: BEGIN
+2020-07-15 12:45:32.833794 (Thread-3): Using snowflake connection "model.jaffle_shop.CALCULATION_BATCH".
+2020-07-15 12:45:32.834180 (Thread-3): On model.jaffle_shop.CALCULATION_BATCH: BEGIN
+2020-07-15 12:45:32.866294 (Thread-4): SQL status: SUCCESS 1 in 0.24 seconds
+2020-07-15 12:45:32.869050 (Thread-4): finished collecting timing info
+2020-07-15 12:45:32.869930 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9bb0793a-cda8-4f08-aefe-9258205300c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163c37a90>]}
+2020-07-15 12:45:32.871208 (Thread-4): 13:45:32 | 4 of 7 OK created table model TEST_STAGING.STG_CUSTOMERS............. [SUCCESS 1 in 5.07s]
+2020-07-15 12:45:32.871938 (Thread-4): Finished running node model.jaffle_shop.stg_customer
+2020-07-15 12:45:33.177352 (Thread-2): SQL status: SUCCESS 1 in 0.46 seconds
+2020-07-15 12:45:33.177555 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:45:33.177673 (Thread-2): On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_ORDERS  as
+      (
+
+select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+from DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_orders
+      );
+2020-07-15 12:45:33.239248 (Thread-1): SQL status: SUCCESS 1 in 0.41 seconds
+2020-07-15 12:45:33.240021 (Thread-3): SQL status: SUCCESS 1 in 0.41 seconds
+2020-07-15 12:45:33.240202 (Thread-1): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:45:33.240469 (Thread-3): Using snowflake connection "model.jaffle_shop.CALCULATION_BATCH".
+2020-07-15 12:45:33.240721 (Thread-1): On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_PAYMENTS  as
+      (
+
+select
+        id as payment_id,
+	order_id,
+	payment_method,
+	amount / 100 as amount
+from DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_payments
+      );
+2020-07-15 12:45:33.240972 (Thread-3): On model.jaffle_shop.CALCULATION_BATCH: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.CALCULATION_BATCH"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CALCULATION_INVENTORY.BATCH  as
+      (
+
+SELECT
+ B.PARTITION
+,B.RECID
+FROM DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY.INVENTBATCH  B
+LEFT JOIN DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY.PDSDISPOSITIONMASTER BD
+ON B.PARTITION = BD.PARTITION
+AND B.DATAAREAID = BD.DATAAREAID
+AND B.PDSDISPOSITIONCODE = BD.DISPOSITIONCODE
+      );
+2020-07-15 12:45:35.817799 (Thread-3): SQL status: SUCCESS 1 in 2.57 seconds
+2020-07-15 12:45:35.823737 (Thread-3): On model.jaffle_shop.CALCULATION_BATCH: COMMIT
+2020-07-15 12:45:35.824790 (Thread-3): Using snowflake connection "model.jaffle_shop.CALCULATION_BATCH".
+2020-07-15 12:45:35.825681 (Thread-3): On model.jaffle_shop.CALCULATION_BATCH: COMMIT
+2020-07-15 12:45:36.119829 (Thread-3): SQL status: SUCCESS 1 in 0.29 seconds
+2020-07-15 12:45:36.128354 (Thread-3): finished collecting timing info
+2020-07-15 12:45:36.130754 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9bb0793a-cda8-4f08-aefe-9258205300c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163ab3490>]}
+2020-07-15 12:45:36.134650 (Thread-3): 13:45:36 | 7 of 7 OK created table model TEST_CALCULATION_INVENTORY.BATCH....... [SUCCESS 1 in 3.35s]
+2020-07-15 12:45:36.136580 (Thread-3): Finished running node model.jaffle_shop.CALCULATION_BATCH
+2020-07-15 12:45:36.351246 (Thread-2): SQL status: SUCCESS 1 in 3.17 seconds
+2020-07-15 12:45:36.354112 (Thread-2): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 12:45:36.354641 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:45:36.354993 (Thread-2): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 12:45:36.389544 (Thread-1): SQL status: SUCCESS 1 in 3.15 seconds
+2020-07-15 12:45:36.392412 (Thread-1): On model.jaffle_shop.stg_payments: COMMIT
+2020-07-15 12:45:36.393022 (Thread-1): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:45:36.393560 (Thread-1): On model.jaffle_shop.stg_payments: COMMIT
+2020-07-15 12:45:36.630578 (Thread-2): SQL status: SUCCESS 1 in 0.28 seconds
+2020-07-15 12:45:36.634196 (Thread-2): finished collecting timing info
+2020-07-15 12:45:36.635409 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9bb0793a-cda8-4f08-aefe-9258205300c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163aee220>]}
+2020-07-15 12:45:36.637371 (Thread-2): 13:45:36 | 5 of 7 OK created table model TEST_STAGING.STG_ORDERS................ [SUCCESS 1 in 3.93s]
+2020-07-15 12:45:36.638327 (Thread-2): Finished running node model.jaffle_shop.stg_orders
+2020-07-15 12:45:36.748741 (Thread-1): SQL status: SUCCESS 1 in 0.35 seconds
+2020-07-15 12:45:36.754318 (Thread-1): finished collecting timing info
+2020-07-15 12:45:36.755863 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9bb0793a-cda8-4f08-aefe-9258205300c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163b8e310>]}
+2020-07-15 12:45:36.759586 (Thread-1): 13:45:36 | 6 of 7 OK created table model TEST_STAGING.STG_PAYMENTS.............. [SUCCESS 1 in 3.99s]
+2020-07-15 12:45:36.760611 (Thread-1): Finished running node model.jaffle_shop.stg_payments
+2020-07-15 12:45:36.764356 (MainThread): Using snowflake connection "master".
+2020-07-15 12:45:36.764650 (MainThread): On master: BEGIN
+2020-07-15 12:45:37.244790 (MainThread): SQL status: SUCCESS 1 in 0.48 seconds
+2020-07-15 12:45:37.245114 (MainThread): On master: COMMIT
+2020-07-15 12:45:37.245374 (MainThread): Using snowflake connection "master".
+2020-07-15 12:45:37.245555 (MainThread): On master: COMMIT
+2020-07-15 12:45:38.351649 (MainThread): SQL status: SUCCESS 1 in 1.11 seconds
+2020-07-15 12:45:38.353051 (MainThread): 13:45:38 | 
+2020-07-15 12:45:38.354549 (MainThread): 13:45:38 | Finished running 7 table models in 21.48s.
+2020-07-15 12:45:38.356101 (MainThread): Connection 'master' was left open.
+2020-07-15 12:45:38.356569 (MainThread): On master: Close
+2020-07-15 12:45:38.800397 (MainThread): Connection 'model.jaffle_shop.stg_customer' was left open.
+2020-07-15 12:45:38.801919 (MainThread): On model.jaffle_shop.stg_customer: Close
+2020-07-15 12:45:39.295376 (MainThread): Connection 'model.jaffle_shop.stg_orders' was left open.
+2020-07-15 12:45:39.295959 (MainThread): On model.jaffle_shop.stg_orders: Close
+2020-07-15 12:45:39.649284 (MainThread): Connection 'model.jaffle_shop.CALCULATION_BATCH' was left open.
+2020-07-15 12:45:39.649852 (MainThread): On model.jaffle_shop.CALCULATION_BATCH: Close
+2020-07-15 12:45:39.989433 (MainThread): Connection 'model.jaffle_shop.stg_payments' was left open.
+2020-07-15 12:45:39.989996 (MainThread): On model.jaffle_shop.stg_payments: Close
+2020-07-15 12:45:40.456345 (MainThread): 
+2020-07-15 12:45:40.456923 (MainThread): Completed successfully
+2020-07-15 12:45:40.461902 (MainThread): 
+Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+2020-07-15 12:45:40.471160 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163cb1ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163cb1a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8163aee8b0>]}
+2020-07-15 12:45:40.471979 (MainThread): Flushing usage events
+2020-07-15 12:47:18.323911 (MainThread): Running with dbt=0.17.0
+2020-07-15 12:47:18.878418 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/richa_15/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 12:47:18.878793 (MainThread): Tracking: tracking
+2020-07-15 12:47:18.878933 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e655a03a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e623d7a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e623d7af0>]}
+2020-07-15 12:47:18.893169 (MainThread): Partial parsing not enabled
+2020-07-15 12:47:18.895826 (MainThread): Parsing macros/core.sql
+2020-07-15 12:47:18.900607 (MainThread): Parsing macros/adapters/common.sql
+2020-07-15 12:47:18.938669 (MainThread): Parsing macros/etc/datetime.sql
+2020-07-15 12:47:18.945449 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-07-15 12:47:18.946298 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-07-15 12:47:18.947703 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-07-15 12:47:18.949267 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-07-15 12:47:18.950581 (MainThread): Parsing macros/etc/query.sql
+2020-07-15 12:47:18.951478 (MainThread): Parsing macros/materializations/helpers.sql
+2020-07-15 12:47:18.957009 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-07-15 12:47:18.967453 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-07-15 12:47:18.968923 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-07-15 12:47:18.973428 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-07-15 12:47:18.988195 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-07-15 12:47:19.007941 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-07-15 12:47:19.009331 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-07-15 12:47:19.021304 (MainThread): Parsing macros/materializations/table/table.sql
+2020-07-15 12:47:19.026099 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-07-15 12:47:19.029622 (MainThread): Parsing macros/materializations/view/view.sql
+2020-07-15 12:47:19.034203 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-07-15 12:47:19.035900 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-07-15 12:47:19.036731 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-07-15 12:47:19.037737 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-07-15 12:47:19.039085 (MainThread): Parsing macros/adapters.sql
+2020-07-15 12:47:19.054516 (MainThread): Parsing macros/catalog.sql
+2020-07-15 12:47:19.055996 (MainThread): Parsing macros/materializations/incremental.sql
+2020-07-15 12:47:19.062511 (MainThread): Parsing macros/materializations/merge.sql
+2020-07-15 12:47:19.064025 (MainThread): Parsing macros/materializations/table.sql
+2020-07-15 12:47:19.066635 (MainThread): Parsing macros/materializations/view.sql
+2020-07-15 12:47:19.087939 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - jaffle_shop
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+2020-07-15 12:47:19.092144 (MainThread): Partial parsing not enabled
+2020-07-15 12:47:19.094223 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2020-07-15 12:47:19.096061 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2020-07-15 12:47:19.098502 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2020-07-15 12:47:19.103799 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2020-07-15 12:47:19.106142 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2020-07-15 12:47:19.113105 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2020-07-15 12:47:19.114516 (MainThread): Parsing macros/cross_db_utils/except.sql
+2020-07-15 12:47:19.115454 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2020-07-15 12:47:19.117333 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2020-07-15 12:47:19.118627 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2020-07-15 12:47:19.119621 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2020-07-15 12:47:19.122004 (MainThread): Parsing macros/cross_db_utils/length.sql
+2020-07-15 12:47:19.123349 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2020-07-15 12:47:19.124276 (MainThread): Parsing macros/cross_db_utils/position.sql
+2020-07-15 12:47:19.125674 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2020-07-15 12:47:19.126970 (MainThread): Parsing macros/cross_db_utils/right.sql
+2020-07-15 12:47:19.128817 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2020-07-15 12:47:19.130431 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2020-07-15 12:47:19.132061 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2020-07-15 12:47:19.136957 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2020-07-15 12:47:19.138532 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2020-07-15 12:47:19.139683 (MainThread): Parsing macros/datetime/date_spine.sql
+2020-07-15 12:47:19.142370 (MainThread): Parsing macros/geo/haversine_distance.sql
+2020-07-15 12:47:19.143198 (MainThread): Parsing macros/logger/log_info.sql
+2020-07-15 12:47:19.143844 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2020-07-15 12:47:19.144480 (MainThread): Parsing macros/logger/pretty_time.sql
+2020-07-15 12:47:19.145200 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2020-07-15 12:47:19.161766 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2020-07-15 12:47:19.162637 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2020-07-15 12:47:19.163831 (MainThread): Parsing macros/schema_tests/equality.sql
+2020-07-15 12:47:19.166499 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2020-07-15 12:47:19.167600 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2020-07-15 12:47:19.168524 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2020-07-15 12:47:19.172466 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2020-07-15 12:47:19.173314 (MainThread): Parsing macros/schema_tests/recency.sql
+2020-07-15 12:47:19.174326 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2020-07-15 12:47:19.175977 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2020-07-15 12:47:19.177177 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2020-07-15 12:47:19.178542 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2020-07-15 12:47:19.179573 (MainThread): Parsing macros/sql/generate_series.sql
+2020-07-15 12:47:19.182315 (MainThread): Parsing macros/sql/get_column_values.sql
+2020-07-15 12:47:19.185288 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2020-07-15 12:47:19.186804 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2020-07-15 12:47:19.188706 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2020-07-15 12:47:19.191324 (MainThread): Parsing macros/sql/get_tables_by_pattern.sql
+2020-07-15 12:47:19.192122 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2020-07-15 12:47:19.194075 (MainThread): Parsing macros/sql/groupby.sql
+2020-07-15 12:47:19.194878 (MainThread): Parsing macros/sql/nullcheck.sql
+2020-07-15 12:47:19.195987 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2020-07-15 12:47:19.196976 (MainThread): Parsing macros/sql/pivot.sql
+2020-07-15 12:47:19.199015 (MainThread): Parsing macros/sql/safe_add.sql
+2020-07-15 12:47:19.199906 (MainThread): Parsing macros/sql/star.sql
+2020-07-15 12:47:19.202033 (MainThread): Parsing macros/sql/surrogate_key.sql
+2020-07-15 12:47:19.204166 (MainThread): Parsing macros/sql/union.sql
+2020-07-15 12:47:19.210665 (MainThread): Parsing macros/sql/unpivot.sql
+2020-07-15 12:47:19.215015 (MainThread): Parsing macros/web/get_url_host.sql
+2020-07-15 12:47:19.216102 (MainThread): Parsing macros/web/get_url_parameter.sql
+2020-07-15 12:47:19.217029 (MainThread): Parsing macros/web/get_url_path.sql
+2020-07-15 12:47:19.246421 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:47:19.246534 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:19.263533 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:47:19.263650 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:19.268027 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:47:19.268116 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:19.272347 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:47:19.272432 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:19.277775 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:47:19.277865 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:19.282825 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:47:19.282911 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:19.459265 (MainThread): Found 6 models, 1 test, 0 snapshots, 0 analyses, 268 macros, 0 operations, 3 seed files, 0 sources
+2020-07-15 12:47:19.460571 (MainThread): 
+2020-07-15 12:47:19.460936 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 12:47:19.461030 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:19.509870 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:47:19.510120 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 12:47:19.525430 (ThreadPoolExecutor-0_1): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:47:19.525936 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:47:19.526096 (ThreadPoolExecutor-0_1): Opening a new connection, currently in state init
+2020-07-15 12:47:19.526842 (ThreadPoolExecutor-0_2): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:47:19.527184 (ThreadPoolExecutor-0_0): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:47:19.529584 (ThreadPoolExecutor-0_1): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:47:19.529896 (ThreadPoolExecutor-0_2): Opening a new connection, currently in state init
+2020-07-15 12:47:19.533254 (ThreadPoolExecutor-0_1): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:47:19.535458 (ThreadPoolExecutor-0_2): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:47:19.537730 (ThreadPoolExecutor-0_2): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:47:20.110174 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='/home/richa_15/.local/lib/python3.8/site-packages/certifi/cacert.pem'>
+2020-07-15 12:47:21.103725 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 17 in 1.57 seconds
+2020-07-15 12:47:25.383977 (ThreadPoolExecutor-0_2): SQL status: SUCCESS 17 in 5.85 seconds
+2020-07-15 12:47:26.200991 (ThreadPoolExecutor-0_1): SQL status: SUCCESS 17 in 6.67 seconds
+2020-07-15 12:47:26.240489 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM".
+2020-07-15 12:47:26.241409 (ThreadPoolExecutor-1_1): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY".
+2020-07-15 12:47:26.241622 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:47:26.242322 (ThreadPoolExecutor-1_2): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING".
+2020-07-15 12:47:26.243416 (ThreadPoolExecutor-1_3): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST".
+2020-07-15 12:47:26.243625 (ThreadPoolExecutor-1_1): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:47:26.259993 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM".
+2020-07-15 12:47:26.260377 (ThreadPoolExecutor-1_2): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:47:26.260672 (ThreadPoolExecutor-1_3): Opening a new connection, currently in state init
+2020-07-15 12:47:26.263887 (ThreadPoolExecutor-1_1): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY".
+2020-07-15 12:47:26.264206 (ThreadPoolExecutor-1_0): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_DIM
+2020-07-15 12:47:26.267477 (ThreadPoolExecutor-1_2): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING".
+2020-07-15 12:47:26.271818 (ThreadPoolExecutor-1_3): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST".
+2020-07-15 12:47:26.272319 (ThreadPoolExecutor-1_1): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY
+2020-07-15 12:47:26.274824 (ThreadPoolExecutor-1_2): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING
+2020-07-15 12:47:26.275679 (ThreadPoolExecutor-1_3): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST
+2020-07-15 12:47:26.806528 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 1 in 0.53 seconds
+2020-07-15 12:47:27.000125 (ThreadPoolExecutor-1_1): SQL status: SUCCESS 2 in 0.72 seconds
+2020-07-15 12:47:27.226586 (ThreadPoolExecutor-1_2): SQL status: SUCCESS 3 in 0.95 seconds
+2020-07-15 12:47:27.939731 (ThreadPoolExecutor-1_3): SQL status: SUCCESS 3 in 1.66 seconds
+2020-07-15 12:47:27.946845 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 12:47:27.947102 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:47:27.947499 (MainThread): Using snowflake connection "master".
+2020-07-15 12:47:27.947698 (MainThread): On master: BEGIN
+2020-07-15 12:47:29.374707 (MainThread): SQL status: SUCCESS 1 in 1.43 seconds
+2020-07-15 12:47:29.375260 (MainThread): On master: COMMIT
+2020-07-15 12:47:29.375717 (MainThread): Using snowflake connection "master".
+2020-07-15 12:47:29.376036 (MainThread): On master: COMMIT
+2020-07-15 12:47:29.784877 (MainThread): SQL status: SUCCESS 1 in 0.41 seconds
+2020-07-15 12:47:29.786072 (MainThread): 13:47:29 | Concurrency: 4 threads (target='dev')
+2020-07-15 12:47:29.787651 (MainThread): 13:47:29 | 
+2020-07-15 12:47:29.810425 (Thread-1): Began running node model.jaffle_shop.CURATION_INVENTBATCH
+2020-07-15 12:47:29.810954 (Thread-2): Began running node model.jaffle_shop.CURATION_PDS
+2020-07-15 12:47:29.811422 (Thread-3): Began running node model.jaffle_shop.customer_payments
+2020-07-15 12:47:29.812374 (Thread-4): Began running node model.jaffle_shop.stg_customer
+2020-07-15 12:47:29.816052 (Thread-1): 13:47:29 | 1 of 6 START table model TEST_CURATION_AX_INVENTORY.INVENTBATCH...... [RUN]
+2020-07-15 12:47:29.820136 (Thread-2): 13:47:29 | 2 of 6 START table model TEST_CURATION_AX_INVENTORY.PDSDISPOSITIONMASTER [RUN]
+2020-07-15 12:47:29.825098 (Thread-3): 13:47:29 | 3 of 6 START table model TEST_DIM.CUSTOMER_PAYMENTS.................. [RUN]
+2020-07-15 12:47:29.828489 (Thread-4): 13:47:29 | 4 of 6 START table model TEST_STAGING.STG_CUSTOMERS.................. [RUN]
+2020-07-15 12:47:29.830197 (Thread-1): Acquiring new snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:47:29.830567 (Thread-1): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST).
+2020-07-15 12:47:29.830995 (Thread-1): Compiling model.jaffle_shop.CURATION_INVENTBATCH
+2020-07-15 12:47:29.831757 (Thread-2): Acquiring new snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:47:29.840861 (Thread-3): Acquiring new snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:47:29.869911 (Thread-1): Writing injected SQL for node "model.jaffle_shop.CURATION_INVENTBATCH"
+2020-07-15 12:47:29.870425 (Thread-2): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING).
+2020-07-15 12:47:29.870832 (Thread-3): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_CURATION_AX_INVENTORY).
+2020-07-15 12:47:29.871441 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:47:29.872081 (Thread-2): Compiling model.jaffle_shop.CURATION_PDS
+2020-07-15 12:47:29.872466 (Thread-3): Compiling model.jaffle_shop.customer_payments
+2020-07-15 12:47:29.872822 (Thread-4): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM).
+2020-07-15 12:47:29.873178 (Thread-1): finished collecting timing info
+2020-07-15 12:47:29.888517 (Thread-2): Writing injected SQL for node "model.jaffle_shop.CURATION_PDS"
+2020-07-15 12:47:29.900872 (Thread-3): Writing injected SQL for node "model.jaffle_shop.customer_payments"
+2020-07-15 12:47:29.901165 (Thread-4): Compiling model.jaffle_shop.stg_customer
+2020-07-15 12:47:29.958143 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.CURATION_INVENTBATCH"
+2020-07-15 12:47:29.959021 (Thread-2): finished collecting timing info
+2020-07-15 12:47:29.973191 (Thread-4): Writing injected SQL for node "model.jaffle_shop.stg_customer"
+2020-07-15 12:47:29.973418 (Thread-3): finished collecting timing info
+2020-07-15 12:47:29.981171 (Thread-2): Writing runtime SQL for node "model.jaffle_shop.CURATION_PDS"
+2020-07-15 12:47:29.982771 (Thread-1): Using snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:47:29.992443 (Thread-3): Writing runtime SQL for node "model.jaffle_shop.customer_payments"
+2020-07-15 12:47:29.993166 (Thread-4): finished collecting timing info
+2020-07-15 12:47:29.993932 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: BEGIN
+2020-07-15 12:47:29.995512 (Thread-2): Using snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:47:30.006235 (Thread-4): Writing runtime SQL for node "model.jaffle_shop.stg_customer"
+2020-07-15 12:47:30.008573 (Thread-3): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:47:30.010793 (Thread-2): On model.jaffle_shop.CURATION_PDS: BEGIN
+2020-07-15 12:47:30.012088 (Thread-3): On model.jaffle_shop.customer_payments: BEGIN
+2020-07-15 12:47:30.017377 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:47:30.020430 (Thread-4): On model.jaffle_shop.stg_customer: BEGIN
+2020-07-15 12:47:30.404767 (Thread-3): SQL status: SUCCESS 1 in 0.39 seconds
+2020-07-15 12:47:30.405307 (Thread-3): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:47:30.405647 (Thread-3): On model.jaffle_shop.customer_payments: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customer_payments"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_DIM.CUSTOMER_PAYMENTS  as
+      (
+
+select
+        customers.id
+from "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."TEST".raw_customers customers
+left join "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."TEST".raw_orders customer_orders using (id)
+      );
+2020-07-15 12:47:30.453072 (Thread-1): SQL status: SUCCESS 1 in 0.45 seconds
+2020-07-15 12:47:30.453572 (Thread-1): Using snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:47:30.453902 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.CURATION_INVENTBATCH"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY.INVENTBATCH  as
+      (
+
+SELECT
+  "DATAAREAID",
+  "DESCRIPTION",
+  "EXPDATE",
+  "IBRVENDACCOUNT",
+  "INVENTBATCHID",
+  "ITEMID",
+  "PARTITION",
+  "PDSBESTBEFOREDATE",
+  "PDSCOUNTRYOFORIGIN1",
+  "PDSCOUNTRYOFORIGIN2",
+  "PDSDISPOSITIONCODE",
+  "PDSFINISHEDGOODSDATETESTED",
+  "PDSINHERITBATCHATTRIB",
+  "PDSINHERITEDSHELFLIFE",
+  "PDSSAMELOT",
+  "PDSSHELFADVICEDATE",
+  "PDSUSEVENDBATCHDATE",
+  "PDSUSEVENDBATCHEXP",
+  "PDSVENDBATCHDATE",
+  "PDSVENDBATCHID",
+  "PDSVENDEXPIRYDATE",
+  "PRODDATE",
+  "RECID",
+  "RECVERSION",
+  "_SDC_BATCHED_AT",
+  "_SDC_DELETED_AT",
+  "_SDC_EXTRACTED_AT"
+FROM "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."INGESTION_AX"."INVENTBATCH"
+      );
+2020-07-15 12:47:30.507825 (Thread-4): SQL status: SUCCESS 1 in 0.49 seconds
+2020-07-15 12:47:30.509084 (Thread-2): SQL status: SUCCESS 1 in 0.50 seconds
+2020-07-15 12:47:30.509556 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:47:30.510037 (Thread-2): Using snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:47:30.510496 (Thread-4): On model.jaffle_shop.stg_customer: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customer"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_CUSTOMERS  as
+      (
+
+select
+        id as customer_id,
+        first_name,
+	last_name,
+        email
+from  DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_customers
+      );
+2020-07-15 12:47:30.510965 (Thread-2): On model.jaffle_shop.CURATION_PDS: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.CURATION_PDS"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_CURATION_AX_INVENTORY.PDSDISPOSITIONMASTER  as
+      (
+
+SELECT
+  "DATAAREAID",
+  "DESCRIPTION",
+  "DISPOSITIONCODE",
+  "IBRALLOWPRODUCTION",
+  "INVENTLOCATIONID",
+  "PARTITION",
+  "PDSNETTABLE",
+  "PDSPRODBLOCKPICK",
+  "PDSPRODBLOCKPRODUCTIONPICKINGJOURNAL",
+  "PDSPRODBLOCKRESERVE",
+  "PDSSALESBLOCKPICK",
+  "PDSSALESBLOCKRESERVE",
+  "PDSSALESBLOCKSHIP",
+  "PDSTRANSBLOCKPICK",
+  "PDSTRANSBLOCKRESERVE",
+  "PDSTRANSBLOCKSHIP",
+  "RECID",
+  "RECVERSION",
+  "STATUS",
+  "_SDC_BATCHED_AT",
+  "_SDC_DELETED_AT",
+  "_SDC_EXTRACTED_AT"
+FROM "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."INGESTION_AX"."PDSDISPOSITIONMASTER"
+      );
+2020-07-15 12:47:33.790948 (Thread-2): SQL status: SUCCESS 1 in 3.28 seconds
+2020-07-15 12:47:33.793874 (Thread-2): On model.jaffle_shop.CURATION_PDS: COMMIT
+2020-07-15 12:47:33.794174 (Thread-2): Using snowflake connection "model.jaffle_shop.CURATION_PDS".
+2020-07-15 12:47:33.794368 (Thread-2): On model.jaffle_shop.CURATION_PDS: COMMIT
+2020-07-15 12:47:34.087025 (Thread-2): SQL status: SUCCESS 1 in 0.29 seconds
+2020-07-15 12:47:34.088450 (Thread-3): SQL status: SUCCESS 1 in 3.68 seconds
+2020-07-15 12:47:34.103697 (Thread-2): finished collecting timing info
+2020-07-15 12:47:34.105454 (Thread-3): On model.jaffle_shop.customer_payments: COMMIT
+2020-07-15 12:47:34.106517 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76b62229-d3f6-4925-975e-cfde1f6dd1a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e61f97d00>]}
+2020-07-15 12:47:34.106883 (Thread-3): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:47:34.108994 (Thread-2): 13:47:34 | 2 of 6 OK created table model TEST_CURATION_AX_INVENTORY.PDSDISPOSITIONMASTER [SUCCESS 1 in 4.27s]
+2020-07-15 12:47:34.109285 (Thread-3): On model.jaffle_shop.customer_payments: COMMIT
+2020-07-15 12:47:34.110345 (Thread-2): Finished running node model.jaffle_shop.CURATION_PDS
+2020-07-15 12:47:34.112880 (Thread-2): Began running node model.jaffle_shop.stg_orders
+2020-07-15 12:47:34.115359 (Thread-2): 13:47:34 | 5 of 6 START table model TEST_STAGING.STG_ORDERS..................... [RUN]
+2020-07-15 12:47:34.116564 (Thread-2): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:47:34.117040 (Thread-2): Re-using an available connection from the pool (formerly model.jaffle_shop.CURATION_PDS).
+2020-07-15 12:47:34.117405 (Thread-2): Compiling model.jaffle_shop.stg_orders
+2020-07-15 12:47:34.131103 (Thread-2): Writing injected SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 12:47:34.132141 (Thread-2): finished collecting timing info
+2020-07-15 12:47:34.139875 (Thread-2): Writing runtime SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 12:47:34.142264 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:47:34.142542 (Thread-2): On model.jaffle_shop.stg_orders: BEGIN
+2020-07-15 12:47:34.176123 (Thread-1): SQL status: SUCCESS 1 in 3.72 seconds
+2020-07-15 12:47:34.178016 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: COMMIT
+2020-07-15 12:47:34.178310 (Thread-1): Using snowflake connection "model.jaffle_shop.CURATION_INVENTBATCH".
+2020-07-15 12:47:34.178501 (Thread-1): On model.jaffle_shop.CURATION_INVENTBATCH: COMMIT
+2020-07-15 12:47:34.380217 (Thread-3): SQL status: SUCCESS 1 in 0.27 seconds
+2020-07-15 12:47:34.386082 (Thread-3): finished collecting timing info
+2020-07-15 12:47:34.387996 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76b62229-d3f6-4925-975e-cfde1f6dd1a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e62410400>]}
+2020-07-15 12:47:34.391243 (Thread-3): 13:47:34 | 3 of 6 OK created table model TEST_DIM.CUSTOMER_PAYMENTS............. [SUCCESS 1 in 4.55s]
+2020-07-15 12:47:34.392984 (Thread-3): Finished running node model.jaffle_shop.customer_payments
+2020-07-15 12:47:34.393632 (Thread-3): Began running node model.jaffle_shop.stg_payments
+2020-07-15 12:47:34.397106 (Thread-3): 13:47:34 | 6 of 6 START table model TEST_STAGING.STG_PAYMENTS................... [RUN]
+2020-07-15 12:47:34.398845 (Thread-3): Acquiring new snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:47:34.399632 (Thread-3): Re-using an available connection from the pool (formerly model.jaffle_shop.customer_payments).
+2020-07-15 12:47:34.399995 (Thread-3): Compiling model.jaffle_shop.stg_payments
+2020-07-15 12:47:34.426798 (Thread-3): Writing injected SQL for node "model.jaffle_shop.stg_payments"
+2020-07-15 12:47:34.428153 (Thread-3): finished collecting timing info
+2020-07-15 12:47:34.438203 (Thread-3): Writing runtime SQL for node "model.jaffle_shop.stg_payments"
+2020-07-15 12:47:34.439928 (Thread-3): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:47:34.440170 (Thread-3): On model.jaffle_shop.stg_payments: BEGIN
+2020-07-15 12:47:34.447440 (Thread-2): SQL status: SUCCESS 1 in 0.30 seconds
+2020-07-15 12:47:34.447748 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:47:34.448012 (Thread-2): On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_ORDERS  as
+      (
+
+select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+from DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_orders
+      );
+2020-07-15 12:47:34.801295 (Thread-1): SQL status: SUCCESS 1 in 0.62 seconds
+2020-07-15 12:47:34.807183 (Thread-1): finished collecting timing info
+2020-07-15 12:47:34.809058 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76b62229-d3f6-4925-975e-cfde1f6dd1a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e62224400>]}
+2020-07-15 12:47:34.812273 (Thread-1): 13:47:34 | 1 of 6 OK created table model TEST_CURATION_AX_INVENTORY.INVENTBATCH. [SUCCESS 1 in 4.98s]
+2020-07-15 12:47:34.813992 (Thread-1): Finished running node model.jaffle_shop.CURATION_INVENTBATCH
+2020-07-15 12:47:34.821030 (Thread-3): SQL status: SUCCESS 1 in 0.38 seconds
+2020-07-15 12:47:34.821547 (Thread-3): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:47:34.821877 (Thread-3): On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_PAYMENTS  as
+      (
+
+select
+        id as payment_id,
+	order_id,
+	payment_method,
+	amount / 100 as amount
+from DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_payments
+      );
+2020-07-15 12:47:36.132305 (Thread-4): SQL status: SUCCESS 1 in 5.62 seconds
+2020-07-15 12:47:36.134906 (Thread-4): On model.jaffle_shop.stg_customer: COMMIT
+2020-07-15 12:47:36.135202 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:47:36.135397 (Thread-4): On model.jaffle_shop.stg_customer: COMMIT
+2020-07-15 12:47:36.441856 (Thread-4): SQL status: SUCCESS 1 in 0.31 seconds
+2020-07-15 12:47:36.445715 (Thread-4): finished collecting timing info
+2020-07-15 12:47:36.447380 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76b62229-d3f6-4925-975e-cfde1f6dd1a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e61fa2a90>]}
+2020-07-15 12:47:36.450632 (Thread-4): 13:47:36 | 4 of 6 OK created table model TEST_STAGING.STG_CUSTOMERS............. [SUCCESS 1 in 6.58s]
+2020-07-15 12:47:36.451784 (Thread-4): Finished running node model.jaffle_shop.stg_customer
+2020-07-15 12:47:36.745257 (Thread-2): SQL status: SUCCESS 1 in 2.30 seconds
+2020-07-15 12:47:36.747950 (Thread-2): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 12:47:36.748451 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:47:36.748782 (Thread-2): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 12:47:37.155020 (Thread-2): SQL status: SUCCESS 1 in 0.41 seconds
+2020-07-15 12:47:37.159489 (Thread-2): finished collecting timing info
+2020-07-15 12:47:37.160756 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76b62229-d3f6-4925-975e-cfde1f6dd1a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e62180c70>]}
+2020-07-15 12:47:37.162691 (Thread-2): 13:47:37 | 5 of 6 OK created table model TEST_STAGING.STG_ORDERS................ [SUCCESS 1 in 3.04s]
+2020-07-15 12:47:37.163660 (Thread-2): Finished running node model.jaffle_shop.stg_orders
+2020-07-15 12:47:37.946879 (Thread-3): SQL status: SUCCESS 1 in 3.12 seconds
+2020-07-15 12:47:37.949829 (Thread-3): On model.jaffle_shop.stg_payments: COMMIT
+2020-07-15 12:47:37.950124 (Thread-3): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:47:37.950317 (Thread-3): On model.jaffle_shop.stg_payments: COMMIT
+2020-07-15 12:47:38.309826 (Thread-3): SQL status: SUCCESS 1 in 0.36 seconds
+2020-07-15 12:47:38.315568 (Thread-3): finished collecting timing info
+2020-07-15 12:47:38.317680 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76b62229-d3f6-4925-975e-cfde1f6dd1a4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e62224070>]}
+2020-07-15 12:47:38.320909 (Thread-3): 13:47:38 | 6 of 6 OK created table model TEST_STAGING.STG_PAYMENTS.............. [SUCCESS 1 in 3.92s]
+2020-07-15 12:47:38.322576 (Thread-3): Finished running node model.jaffle_shop.stg_payments
+2020-07-15 12:47:38.329205 (MainThread): Using snowflake connection "master".
+2020-07-15 12:47:38.329648 (MainThread): On master: BEGIN
+2020-07-15 12:47:38.721541 (MainThread): SQL status: SUCCESS 1 in 0.39 seconds
+2020-07-15 12:47:38.722083 (MainThread): On master: COMMIT
+2020-07-15 12:47:38.722528 (MainThread): Using snowflake connection "master".
+2020-07-15 12:47:38.722848 (MainThread): On master: COMMIT
+2020-07-15 12:47:39.203309 (MainThread): SQL status: SUCCESS 1 in 0.48 seconds
+2020-07-15 12:47:39.204612 (MainThread): 13:47:39 | 
+2020-07-15 12:47:39.206229 (MainThread): 13:47:39 | Finished running 6 table models in 19.74s.
+2020-07-15 12:47:39.208109 (MainThread): Connection 'master' was left open.
+2020-07-15 12:47:39.208848 (MainThread): On master: Close
+2020-07-15 12:47:39.819177 (MainThread): Connection 'model.jaffle_shop.stg_orders' was left open.
+2020-07-15 12:47:39.820729 (MainThread): On model.jaffle_shop.stg_orders: Close
+2020-07-15 12:47:40.241735 (MainThread): Connection 'model.jaffle_shop.stg_payments' was left open.
+2020-07-15 12:47:40.242048 (MainThread): On model.jaffle_shop.stg_payments: Close
+2020-07-15 12:47:40.741204 (MainThread): Connection 'model.jaffle_shop.stg_customer' was left open.
+2020-07-15 12:47:40.741537 (MainThread): On model.jaffle_shop.stg_customer: Close
+2020-07-15 12:47:41.151729 (MainThread): Connection 'model.jaffle_shop.CURATION_INVENTBATCH' was left open.
+2020-07-15 12:47:41.152292 (MainThread): On model.jaffle_shop.CURATION_INVENTBATCH: Close
+2020-07-15 12:47:43.136640 (MainThread): 
+2020-07-15 12:47:43.137212 (MainThread): Completed successfully
+2020-07-15 12:47:43.139551 (MainThread): 
+Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+2020-07-15 12:47:43.148632 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e62370f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e621f59d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4e62223490>]}
+2020-07-15 12:47:43.149186 (MainThread): Flushing usage events
+2020-07-15 12:48:07.277875 (MainThread): Running with dbt=0.17.0
+2020-07-15 12:48:07.725654 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/richa_15/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-07-15 12:48:07.726021 (MainThread): Tracking: tracking
+2020-07-15 12:48:07.726157 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3713f40a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3710d76af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3710d76b80>]}
+2020-07-15 12:48:07.739218 (MainThread): Partial parsing not enabled
+2020-07-15 12:48:07.741330 (MainThread): Parsing macros/core.sql
+2020-07-15 12:48:07.744787 (MainThread): Parsing macros/adapters/common.sql
+2020-07-15 12:48:07.780040 (MainThread): Parsing macros/etc/datetime.sql
+2020-07-15 12:48:07.786809 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-07-15 12:48:07.787660 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-07-15 12:48:07.789003 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-07-15 12:48:07.790547 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-07-15 12:48:07.791819 (MainThread): Parsing macros/etc/query.sql
+2020-07-15 12:48:07.792729 (MainThread): Parsing macros/materializations/helpers.sql
+2020-07-15 12:48:07.798302 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-07-15 12:48:07.808277 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-07-15 12:48:07.809769 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-07-15 12:48:07.814365 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-07-15 12:48:07.829081 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-07-15 12:48:07.848827 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-07-15 12:48:07.850245 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-07-15 12:48:07.861691 (MainThread): Parsing macros/materializations/table/table.sql
+2020-07-15 12:48:07.866420 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-07-15 12:48:07.870014 (MainThread): Parsing macros/materializations/view/view.sql
+2020-07-15 12:48:07.874526 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-07-15 12:48:07.876065 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-07-15 12:48:07.876901 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-07-15 12:48:07.877862 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-07-15 12:48:07.879207 (MainThread): Parsing macros/adapters.sql
+2020-07-15 12:48:07.894480 (MainThread): Parsing macros/catalog.sql
+2020-07-15 12:48:07.895925 (MainThread): Parsing macros/materializations/incremental.sql
+2020-07-15 12:48:07.902445 (MainThread): Parsing macros/materializations/merge.sql
+2020-07-15 12:48:07.903981 (MainThread): Parsing macros/materializations/table.sql
+2020-07-15 12:48:07.906605 (MainThread): Parsing macros/materializations/view.sql
+2020-07-15 12:48:07.927757 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - jaffle_shop
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+2020-07-15 12:48:07.932357 (MainThread): Partial parsing not enabled
+2020-07-15 12:48:07.934929 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2020-07-15 12:48:07.936982 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2020-07-15 12:48:07.940133 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2020-07-15 12:48:07.944610 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2020-07-15 12:48:07.946653 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2020-07-15 12:48:07.955558 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2020-07-15 12:48:07.957097 (MainThread): Parsing macros/cross_db_utils/except.sql
+2020-07-15 12:48:07.958085 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2020-07-15 12:48:07.959411 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2020-07-15 12:48:07.960725 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2020-07-15 12:48:07.961771 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2020-07-15 12:48:07.964161 (MainThread): Parsing macros/cross_db_utils/length.sql
+2020-07-15 12:48:07.965283 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2020-07-15 12:48:07.966254 (MainThread): Parsing macros/cross_db_utils/position.sql
+2020-07-15 12:48:07.967947 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2020-07-15 12:48:07.969152 (MainThread): Parsing macros/cross_db_utils/right.sql
+2020-07-15 12:48:07.971258 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2020-07-15 12:48:07.973020 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2020-07-15 12:48:07.974599 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2020-07-15 12:48:07.979176 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2020-07-15 12:48:07.980584 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2020-07-15 12:48:07.981611 (MainThread): Parsing macros/datetime/date_spine.sql
+2020-07-15 12:48:07.984292 (MainThread): Parsing macros/geo/haversine_distance.sql
+2020-07-15 12:48:07.985112 (MainThread): Parsing macros/logger/log_info.sql
+2020-07-15 12:48:07.985764 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2020-07-15 12:48:07.986407 (MainThread): Parsing macros/logger/pretty_time.sql
+2020-07-15 12:48:07.987188 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2020-07-15 12:48:08.003740 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2020-07-15 12:48:08.004618 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2020-07-15 12:48:08.005822 (MainThread): Parsing macros/schema_tests/equality.sql
+2020-07-15 12:48:08.008503 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2020-07-15 12:48:08.009580 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2020-07-15 12:48:08.010510 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2020-07-15 12:48:08.014494 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2020-07-15 12:48:08.015371 (MainThread): Parsing macros/schema_tests/recency.sql
+2020-07-15 12:48:08.016407 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2020-07-15 12:48:08.017974 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2020-07-15 12:48:08.019113 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2020-07-15 12:48:08.020388 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2020-07-15 12:48:08.021375 (MainThread): Parsing macros/sql/generate_series.sql
+2020-07-15 12:48:08.024048 (MainThread): Parsing macros/sql/get_column_values.sql
+2020-07-15 12:48:08.027020 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2020-07-15 12:48:08.028543 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2020-07-15 12:48:08.030480 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2020-07-15 12:48:08.033249 (MainThread): Parsing macros/sql/get_tables_by_pattern.sql
+2020-07-15 12:48:08.034086 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2020-07-15 12:48:08.036070 (MainThread): Parsing macros/sql/groupby.sql
+2020-07-15 12:48:08.036873 (MainThread): Parsing macros/sql/nullcheck.sql
+2020-07-15 12:48:08.037889 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2020-07-15 12:48:08.038905 (MainThread): Parsing macros/sql/pivot.sql
+2020-07-15 12:48:08.040962 (MainThread): Parsing macros/sql/safe_add.sql
+2020-07-15 12:48:08.041852 (MainThread): Parsing macros/sql/star.sql
+2020-07-15 12:48:08.043999 (MainThread): Parsing macros/sql/surrogate_key.sql
+2020-07-15 12:48:08.046073 (MainThread): Parsing macros/sql/union.sql
+2020-07-15 12:48:08.052707 (MainThread): Parsing macros/sql/unpivot.sql
+2020-07-15 12:48:08.057079 (MainThread): Parsing macros/web/get_url_host.sql
+2020-07-15 12:48:08.058175 (MainThread): Parsing macros/web/get_url_parameter.sql
+2020-07-15 12:48:08.059096 (MainThread): Parsing macros/web/get_url_path.sql
+2020-07-15 12:48:08.088492 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:48:08.088622 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:48:08.104889 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:48:08.104992 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:48:08.109894 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:48:08.109979 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:48:08.114827 (MainThread): Acquiring new snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:48:08.114914 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:48:08.289310 (MainThread): Found 4 models, 1 test, 0 snapshots, 0 analyses, 268 macros, 0 operations, 3 seed files, 0 sources
+2020-07-15 12:48:08.290352 (MainThread): 
+2020-07-15 12:48:08.290726 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 12:48:08.290851 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:48:08.294358 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:48:08.294459 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-07-15 12:48:08.304661 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:48:08.305060 (ThreadPoolExecutor-0_0): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:48:08.306385 (ThreadPoolExecutor-0_1): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:48:08.345015 (ThreadPoolExecutor-0_1): Opening a new connection, currently in state init
+2020-07-15 12:48:08.348365 (ThreadPoolExecutor-0_1): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE".
+2020-07-15 12:48:08.348556 (ThreadPoolExecutor-0_1): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"} */
+
+    show terse schemas in database DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE
+    limit 10000
+2020-07-15 12:48:09.072299 (ThreadPoolExecutor-0_0): unclosed file <_io.BufferedReader name='/home/richa_15/.local/lib/python3.8/site-packages/certifi/cacert.pem'>
+2020-07-15 12:48:10.066002 (ThreadPoolExecutor-0_1): SQL status: SUCCESS 17 in 1.72 seconds
+2020-07-15 12:48:10.077803 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 17 in 1.77 seconds
+2020-07-15 12:48:10.116222 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST".
+2020-07-15 12:48:10.117249 (ThreadPoolExecutor-1_1): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING".
+2020-07-15 12:48:10.117483 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:48:10.118668 (ThreadPoolExecutor-1_2): Acquiring new snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM".
+2020-07-15 12:48:10.119111 (ThreadPoolExecutor-1_1): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE).
+2020-07-15 12:48:10.133307 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST".
+2020-07-15 12:48:10.133594 (ThreadPoolExecutor-1_2): Opening a new connection, currently in state init
+2020-07-15 12:48:10.136792 (ThreadPoolExecutor-1_1): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING".
+2020-07-15 12:48:10.137104 (ThreadPoolExecutor-1_0): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST
+2020-07-15 12:48:10.140228 (ThreadPoolExecutor-1_2): Using snowflake connection "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM".
+2020-07-15 12:48:10.140537 (ThreadPoolExecutor-1_1): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING
+2020-07-15 12:48:10.142752 (ThreadPoolExecutor-1_2): On list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM"} */
+
+    show terse objects in DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_DIM
+2020-07-15 12:48:10.517441 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 3 in 0.38 seconds
+2020-07-15 12:48:10.706586 (ThreadPoolExecutor-1_1): SQL status: SUCCESS 3 in 0.56 seconds
+2020-07-15 12:48:11.767899 (ThreadPoolExecutor-1_2): SQL status: SUCCESS 1 in 1.62 seconds
+2020-07-15 12:48:11.773056 (MainThread): Acquiring new snowflake connection "master".
+2020-07-15 12:48:11.773290 (MainThread): Opening a new connection, currently in state init
+2020-07-15 12:48:11.773651 (MainThread): Using snowflake connection "master".
+2020-07-15 12:48:11.773842 (MainThread): On master: BEGIN
+2020-07-15 12:48:13.815223 (MainThread): SQL status: SUCCESS 1 in 2.04 seconds
+2020-07-15 12:48:13.815568 (MainThread): On master: COMMIT
+2020-07-15 12:48:13.815835 (MainThread): Using snowflake connection "master".
+2020-07-15 12:48:13.816017 (MainThread): On master: COMMIT
+2020-07-15 12:48:15.332999 (MainThread): SQL status: SUCCESS 1 in 1.52 seconds
+2020-07-15 12:48:15.334416 (MainThread): 13:48:15 | Concurrency: 4 threads (target='dev')
+2020-07-15 12:48:15.336021 (MainThread): 13:48:15 | 
+2020-07-15 12:48:15.359337 (Thread-1): Began running node model.jaffle_shop.customer_payments
+2020-07-15 12:48:15.359865 (Thread-2): Began running node model.jaffle_shop.stg_customer
+2020-07-15 12:48:15.360357 (Thread-3): Began running node model.jaffle_shop.stg_orders
+2020-07-15 12:48:15.360786 (Thread-4): Began running node model.jaffle_shop.stg_payments
+2020-07-15 12:48:15.364205 (Thread-1): 13:48:15 | 1 of 4 START table model TEST_DIM.CUSTOMER_PAYMENTS.................. [RUN]
+2020-07-15 12:48:15.367369 (Thread-2): 13:48:15 | 2 of 4 START table model TEST_STAGING.STG_CUSTOMERS.................. [RUN]
+2020-07-15 12:48:15.371420 (Thread-3): 13:48:15 | 3 of 4 START table model TEST_STAGING.STG_ORDERS..................... [RUN]
+2020-07-15 12:48:15.374903 (Thread-4): 13:48:15 | 4 of 4 START table model TEST_STAGING.STG_PAYMENTS................... [RUN]
+2020-07-15 12:48:15.377159 (Thread-1): Acquiring new snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:48:15.377649 (Thread-1): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_DIM).
+2020-07-15 12:48:15.378204 (Thread-1): Compiling model.jaffle_shop.customer_payments
+2020-07-15 12:48:15.379038 (Thread-2): Acquiring new snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:48:15.387000 (Thread-3): Acquiring new snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:48:15.417799 (Thread-2): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST_STAGING).
+2020-07-15 12:48:15.425789 (Thread-1): Writing injected SQL for node "model.jaffle_shop.customer_payments"
+2020-07-15 12:48:15.426525 (Thread-4): Acquiring new snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:48:15.426854 (Thread-3): Re-using an available connection from the pool (formerly list_DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE_TEST).
+2020-07-15 12:48:15.427234 (Thread-2): Compiling model.jaffle_shop.stg_customer
+2020-07-15 12:48:15.427864 (Thread-4): Opening a new connection, currently in state init
+2020-07-15 12:48:15.428161 (Thread-3): Compiling model.jaffle_shop.stg_orders
+2020-07-15 12:48:15.444398 (Thread-2): Writing injected SQL for node "model.jaffle_shop.stg_customer"
+2020-07-15 12:48:15.444941 (Thread-1): finished collecting timing info
+2020-07-15 12:48:15.445513 (Thread-4): Compiling model.jaffle_shop.stg_payments
+2020-07-15 12:48:15.463089 (Thread-3): Writing injected SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 12:48:15.512032 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.customer_payments"
+2020-07-15 12:48:15.525772 (Thread-2): finished collecting timing info
+2020-07-15 12:48:15.526232 (Thread-4): Writing injected SQL for node "model.jaffle_shop.stg_payments"
+2020-07-15 12:48:15.533840 (Thread-2): Writing runtime SQL for node "model.jaffle_shop.stg_customer"
+2020-07-15 12:48:15.534720 (Thread-3): finished collecting timing info
+2020-07-15 12:48:15.536001 (Thread-1): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:48:15.543608 (Thread-3): Writing runtime SQL for node "model.jaffle_shop.stg_orders"
+2020-07-15 12:48:15.543873 (Thread-4): finished collecting timing info
+2020-07-15 12:48:15.544465 (Thread-1): On model.jaffle_shop.customer_payments: BEGIN
+2020-07-15 12:48:15.545446 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:48:15.553102 (Thread-4): Writing runtime SQL for node "model.jaffle_shop.stg_payments"
+2020-07-15 12:48:15.556388 (Thread-3): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:48:15.556674 (Thread-2): On model.jaffle_shop.stg_customer: BEGIN
+2020-07-15 12:48:15.558431 (Thread-3): On model.jaffle_shop.stg_orders: BEGIN
+2020-07-15 12:48:15.559297 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:48:15.564556 (Thread-4): On model.jaffle_shop.stg_payments: BEGIN
+2020-07-15 12:48:15.978888 (Thread-1): SQL status: SUCCESS 1 in 0.43 seconds
+2020-07-15 12:48:15.979497 (Thread-1): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:48:15.980321 (Thread-1): On model.jaffle_shop.customer_payments: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.customer_payments"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_DIM.CUSTOMER_PAYMENTS  as
+      (
+
+select
+        customers.id
+from "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."TEST".raw_customers customers
+left join "DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE"."TEST".raw_orders customer_orders using (id)
+      );
+2020-07-15 12:48:16.050451 (Thread-3): SQL status: SUCCESS 1 in 0.49 seconds
+2020-07-15 12:48:16.115176 (Thread-2): SQL status: SUCCESS 1 in 0.56 seconds
+2020-07-15 12:48:16.140248 (Thread-3): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:48:16.168777 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:48:16.169193 (Thread-3): On model.jaffle_shop.stg_orders: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_orders"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_ORDERS  as
+      (
+
+select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+from DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_orders
+      );
+2020-07-15 12:48:16.169669 (Thread-2): On model.jaffle_shop.stg_customer: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_customer"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_CUSTOMERS  as
+      (
+
+select
+        id as customer_id,
+        first_name,
+	last_name,
+        email
+from  DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_customers
+      );
+2020-07-15 12:48:17.116339 (Thread-4): SQL status: SUCCESS 1 in 1.55 seconds
+2020-07-15 12:48:17.116916 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:48:17.117254 (Thread-4): On model.jaffle_shop.stg_payments: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_payments"} */
+
+
+      create or replace transient table DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST_STAGING.STG_PAYMENTS  as
+      (
+
+select
+        id as payment_id,
+	order_id,
+	payment_method,
+	amount / 100 as amount
+from DATAOPS_FB_FEATURERSDEMANDFORECAST_CANDIDATE.TEST.raw_payments
+      );
+2020-07-15 12:48:21.914650 (Thread-4): SQL status: SUCCESS 1 in 4.80 seconds
+2020-07-15 12:48:21.917797 (Thread-4): On model.jaffle_shop.stg_payments: COMMIT
+2020-07-15 12:48:21.918087 (Thread-4): Using snowflake connection "model.jaffle_shop.stg_payments".
+2020-07-15 12:48:21.918276 (Thread-4): On model.jaffle_shop.stg_payments: COMMIT
+2020-07-15 12:48:22.012319 (Thread-1): SQL status: SUCCESS 1 in 6.03 seconds
+2020-07-15 12:48:22.015044 (Thread-1): On model.jaffle_shop.customer_payments: COMMIT
+2020-07-15 12:48:22.015552 (Thread-1): Using snowflake connection "model.jaffle_shop.customer_payments".
+2020-07-15 12:48:22.015895 (Thread-1): On model.jaffle_shop.customer_payments: COMMIT
+2020-07-15 12:48:22.187451 (Thread-2): SQL status: SUCCESS 1 in 6.01 seconds
+2020-07-15 12:48:22.190506 (Thread-2): On model.jaffle_shop.stg_customer: COMMIT
+2020-07-15 12:48:22.191019 (Thread-2): Using snowflake connection "model.jaffle_shop.stg_customer".
+2020-07-15 12:48:22.191359 (Thread-2): On model.jaffle_shop.stg_customer: COMMIT
+2020-07-15 12:48:22.271225 (Thread-4): SQL status: SUCCESS 1 in 0.35 seconds
+2020-07-15 12:48:22.290932 (Thread-4): finished collecting timing info
+2020-07-15 12:48:22.294146 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7292b222-c9f5-40cf-b441-7167af39de35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3710bec760>]}
+2020-07-15 12:48:22.296064 (Thread-4): 13:48:22 | 4 of 4 OK created table model TEST_STAGING.STG_PAYMENTS.............. [SUCCESS 1 in 6.87s]
+2020-07-15 12:48:22.296813 (Thread-1): SQL status: SUCCESS 1 in 0.28 seconds
+2020-07-15 12:48:22.300100 (Thread-1): finished collecting timing info
+2020-07-15 12:48:22.300508 (Thread-4): Finished running node model.jaffle_shop.stg_payments
+2020-07-15 12:48:22.301102 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7292b222-c9f5-40cf-b441-7167af39de35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3710830be0>]}
+2020-07-15 12:48:22.302538 (Thread-1): 13:48:22 | 1 of 4 OK created table model TEST_DIM.CUSTOMER_PAYMENTS............. [SUCCESS 1 in 6.92s]
+2020-07-15 12:48:22.302843 (Thread-1): Finished running node model.jaffle_shop.customer_payments
+2020-07-15 12:48:22.304323 (Thread-3): SQL status: SUCCESS 1 in 6.13 seconds
+2020-07-15 12:48:22.305041 (Thread-3): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 12:48:22.305165 (Thread-3): Using snowflake connection "model.jaffle_shop.stg_orders".
+2020-07-15 12:48:22.305352 (Thread-3): On model.jaffle_shop.stg_orders: COMMIT
+2020-07-15 12:48:22.647649 (Thread-2): SQL status: SUCCESS 1 in 0.46 seconds
+2020-07-15 12:48:22.652870 (Thread-2): finished collecting timing info
+2020-07-15 12:48:22.654068 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7292b222-c9f5-40cf-b441-7167af39de35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f371091f3a0>]}
+2020-07-15 12:48:22.655935 (Thread-2): 13:48:22 | 2 of 4 OK created table model TEST_STAGING.STG_CUSTOMERS............. [SUCCESS 1 in 7.28s]
+2020-07-15 12:48:22.656967 (Thread-2): Finished running node model.jaffle_shop.stg_customer
+2020-07-15 12:48:23.645894 (Thread-3): SQL status: SUCCESS 1 in 1.34 seconds
+2020-07-15 12:48:23.651614 (Thread-3): finished collecting timing info
+2020-07-15 12:48:23.653448 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7292b222-c9f5-40cf-b441-7167af39de35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3710bb26d0>]}
+2020-07-15 12:48:23.656581 (Thread-3): 13:48:23 | 3 of 4 OK created table model TEST_STAGING.STG_ORDERS................ [SUCCESS 1 in 8.27s]
+2020-07-15 12:48:23.658230 (Thread-3): Finished running node model.jaffle_shop.stg_orders
+2020-07-15 12:48:23.665419 (MainThread): Using snowflake connection "master".
+2020-07-15 12:48:23.665856 (MainThread): On master: BEGIN
+2020-07-15 12:48:24.054148 (MainThread): SQL status: SUCCESS 1 in 0.39 seconds
+2020-07-15 12:48:24.054754 (MainThread): On master: COMMIT
+2020-07-15 12:48:24.055257 (MainThread): Using snowflake connection "master".
+2020-07-15 12:48:24.055616 (MainThread): On master: COMMIT
+2020-07-15 12:48:24.568333 (MainThread): SQL status: SUCCESS 1 in 0.51 seconds
+2020-07-15 12:48:24.569466 (MainThread): 13:48:24 | 
+2020-07-15 12:48:24.570837 (MainThread): 13:48:24 | Finished running 4 table models in 16.28s.
+2020-07-15 12:48:24.572602 (MainThread): Connection 'master' was left open.
+2020-07-15 12:48:24.573246 (MainThread): On master: Close
+2020-07-15 12:48:25.047631 (MainThread): Connection 'model.jaffle_shop.stg_orders' was left open.
+2020-07-15 12:48:25.048917 (MainThread): On model.jaffle_shop.stg_orders: Close
+2020-07-15 12:48:25.965152 (MainThread): Connection 'model.jaffle_shop.stg_customer' was left open.
+2020-07-15 12:48:25.965710 (MainThread): On model.jaffle_shop.stg_customer: Close
+2020-07-15 12:48:26.515698 (MainThread): Connection 'model.jaffle_shop.customer_payments' was left open.
+2020-07-15 12:48:26.516048 (MainThread): On model.jaffle_shop.customer_payments: Close
+2020-07-15 12:48:27.026375 (MainThread): Connection 'model.jaffle_shop.stg_payments' was left open.
+2020-07-15 12:48:27.026881 (MainThread): On model.jaffle_shop.stg_payments: Close
+2020-07-15 12:48:27.773377 (MainThread): 
+2020-07-15 12:48:27.774197 (MainThread): Completed successfully
+2020-07-15 12:48:27.777393 (MainThread): 
+Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+2020-07-15 12:48:27.779396 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f371695e490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3710db0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3710bf3040>]}
+2020-07-15 12:48:27.779860 (MainThread): Flushing usage events
